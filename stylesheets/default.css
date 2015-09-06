@@ -1,0 +1,98 @@
+body {
+  background: #eeeeee;
+  font-size: 1.0em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  text-align: justify;
+  margin: 0px auto;
+  padding: 0px;
+  border:0;
+  width: 100%;
+  background-color: #FFF2E7
+}
+
+a {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+header {
+  width: 100%;
+  background-color: #DE8642;
+  border-bottom: 0.1em solid #d3d3d3;
+  bottom: 0;
+  height: 6em;
+}
+
+header img {
+  max-height: 6em;
+  margin: 1em 1em 0 1em;
+  padding: 0.3em;
+  border: 0.01em solid #d3d3d3;
+}
+
+header h1 {
+  font-size: 2.5em;
+  position: relative;
+  left: 1em;
+  top: -1em;
+  display: inline-block;
+}
+
+.Header-Title {
+  text-decoration: none;
+  color: black;
+}
+
+header nav {
+  float: right;
+  margin: 3.5em 2em 0 0;
+
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav li + li:before{
+    content: " | ";
+    padding: 0 1em;
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+}
+
+figure {
+    display: inline-block;
+    width: 25%;
+    margin: 1em;
+    text-align:center;
+}
+
+figure img{
+  display: inline-block;
+  max-height: 12em;
+  max-width: 12em;
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  padding: 0.3em;
+  border: 0.1em solid #d3d3d3;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  border-top: 0.1em solid #d3d3d3;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  background-color: #DE8642;
+}
