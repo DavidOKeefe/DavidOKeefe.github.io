@@ -1,0 +1,70 @@
+* { border: 1px dotted grey}
+
+/* HEADER STYLING */
+
+header {
+  background-color: yellow;
+  height: 6em;
+}
+
+.self-portrait {
+  float: left;
+}
+
+.self-portrait-image {
+  max-height: 6em;
+  width: auto;
+}
+
+.self-title {
+  padding: 0 0 0 1em;
+  float: left;
+}
+
+.upper-navbar {
+  float: right;
+}
+
+.nav-pages {
+  width: 15em;
+}
+
+ul.nav-pages li {
+  display: inline;
+  float: left;
+  padding: 0 0.5em 0 0.5em;
+}
+
+
+
+/* SECTION STYLING */
+
+section {
+  background-color: white;
+}
+
+.projects {
+
+}
+
+.project {
+  display: inline;
+  float: left;
+}
+
+.project-image {
+  max-height: 12em;
+  width: auto;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: grey;
+  height: 3em;
+}
+
+.lower-navbar {
+  width: 30em;
+}
+

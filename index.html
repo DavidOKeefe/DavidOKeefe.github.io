@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+    <title>David's Site</title>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville|Amatic+SC:400,700|Megrim' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/site.css" />
   </head>
   <body>
     <header>
-      <img src="imgs/Self-Image.jpg" alt="icon"/>
-      <h1>
-      <a class ="Header-Title"href="mailto:davidpokeefe3@gmail.com" target="_self">
-        DAVID O'KEEFE
-      </a>
-      </h1>
-      <nav>
-        <ul>
+      <div class="self-portrait">
+        <img class="self-portrait-image" src="imgs/Self-Image.jpg" alt="icon"/>
+      </div>
+      <div class="self-title">
+        <h1>
+          <a href="mailto:davidpokeefe3@gmail.com" target="_self">
+            DAVID O'KEEFE
+          </a>
+        </h1>
+      </div>
+      <nav class="upper-navbar">
+        <ul class="nav-pages">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="blog/index.html">BLOG</a></li>
         </ul>
       </nav>
     </header>
+
     <section>
-      <figure>
-        <img src="imgs/Beltline-Pillar.jpg" alt="Project1" />
-        <a href="#">
-          <figcaption>Project 1</figcaption></a>
-      </figure>
-      <figure>
-        <img src="imgs/Smoke-Stack.jpg" alt="Project2" />
-        <a href="#">
-          <figcaption>Project 2</figcaption>
-        </a>
-      </figure>
-      <figure>
-        <img src="imgs/Ponce.jpg" alt="Project3" />
-        <a href="#">
-          <figcaption>Project 3</figcaption>
-        </a>
-      </figure>
+      <div class="projects">
+        <figure class="project">
+          <img class="project-image" src="imgs/Beltline-Pillar.jpg" alt="Project1" />
+          <a href="#">
+            <figcaption>Project 1</figcaption></a>
+        </figure>
+        <figure>
+          <img class="project-image" src="imgs/Smoke-Stack.jpg" alt="Project2" />
+          <a href="#">
+            <figcaption>Project 2</figcaption>
+          </a>
+        </figure>
+        <figure>
+          <img class="project-image" src="imgs/Ponce.jpg" alt="Project3" />
+          <a href="#">
+            <figcaption>Project 3</figcaption>
+          </a>
+        </figure>
+      </div>
     </section>
+
     <footer>
       <nav>
-        <ul>
+        <ul class="nav-pages lower-navbar">
           <li>
             <a href="https://github.com/DavidOKeefe">
               GITHUB
