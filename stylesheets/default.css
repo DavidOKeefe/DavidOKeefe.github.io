@@ -1,6 +1,9 @@
 body {
   background: #eeeeee;
   font-size: 1.0em;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
   text-align: justify;
   margin: 0px auto;
   padding: 0px;
