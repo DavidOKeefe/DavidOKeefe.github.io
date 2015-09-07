@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Concepts</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../imgs/Self-Image.jpg" alt="icon"/>
+      <h1>
+      <a class ="Header-Title"href="mailto:davidpokeefe3@gmail.com" target="_self">
+        DAVID O'KEEFE
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="index.html">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+        <li><a href="t1-git-blog.html">Version Control</a></li>
+        <li><a href="css-concepts.html">CSS Concepts</a></li>
+        <li><a href="index.html">Blog Post 4</a></li>
+        <li><a href="index.html">Blog Post 5</a></li>
+        <li><a href="index.html">Blog Post 6</a></li>
+        <li><a href="index.html">Blog Post 7</a></li>
+      </ul>
+    </aside>
+    <section>
+      <img src="../imgs/Chair.jpg" alt="Blog Image"/>
+      <div>
+        <h1>CSS Nightmare</h1>
+        <time>2015-09-06</time>
+      </div>
+      <div>
+        <p>
+          Week 3 of Phase 0 is wrapping up so I thought I'd reflect a little on the nightmare that is CSS. It seems relatively intuitive when starting. It makes sense. I have these elements in HTML and I want to add some styling. Easy enough, just throw a class into the HTML and add some properties to the stylesheet. All done!
+        </p>
+        <p>
+          Wait, that doesn't look right. I'll just open the dev tools to test out a few options and... three hours later, perfect!
+        </p>
+        <p>
+          It's a time suck like nothing else i've experienced. It doesn't tire or frustrate me necessarily. It just causes the clock to move really really fast.
+        </p>
+        <p>
+          To solidify some of these ideas, here's a quick recap of the different types of positionings:
+        </p>
+        <ul>
+          <li>
+            Static Positioning: This is the default option. Each block level element is going to sit on top of the next one.
+          </li>
+          <li>
+            Relative Positioning: This is a way to move an element in relation to where it normally would have been with static positioning. You set the position to relative and then use the top, bottom, left, right properties to move the element.
+          </li>
+          <li>
+            Absolute Positioning: This property takes the element out of the normal flow. Other elements on the page no longer have any affect on this element.
+          </li>
+          <li>
+            Fixed Positioning: This is a type of absolute positioning that fixes the element in place in relation to the browser window. For instance, if you scroll down the page the element will stay in the exact same place.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/DavidOKeefe">
+              GITHUB
+            </a>
+            <li>
+              <a href="https://www.linkedin.com/in/davidpokeefe3">
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DavidPOKeefe3">
+                TWITTER
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
