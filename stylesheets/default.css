@@ -1,5 +1,4 @@
 body {
-  background: #eeeeee;
   font-size: 1.0em;
   font-family: proxima-nova, sans-serif;
   font-style: normal;
@@ -27,14 +26,14 @@ header {
   height: 6em;
 }
 
-header img {
+.Self-Portrait {
   max-height: 6em;
   margin: 1em 1em 0 1em;
   padding: 0.3em;
   border: 0.01em solid #d3d3d3;
 }
 
-header h1 {
+.Banner {
   font-size: 2.5em;
   position: relative;
   left: 1em;
@@ -42,7 +41,7 @@ header h1 {
   display: inline-block;
 }
 
-.Header-Title {
+.Banner-Link {
   text-decoration: none;
   color: black;
 }
