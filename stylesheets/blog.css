@@ -63,3 +63,7 @@ section ul {
 .blog_text {
   margin-bottom: 5em;
 }
+
+.blog_text ul li{
+  list-style-type: none;
+}

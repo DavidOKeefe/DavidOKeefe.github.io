@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enumerable Methods</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <header>
+      <img class="Self-Portrait" src="../imgs/Self-Image.jpg" alt="icon"/>
+      <h1 class="Banner">
+      <a class ="Banner-Link" href="mailto:davidpokeefe3@gmail.com" target="_self">
+        DAVID O'KEEFE
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="index.html">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+        <li><a href="t1-git-blog.html">Version Control</a></li>
+        <li><a href="css-concepts.html">CSS Concepts</a></li>
+        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+        <li><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
+        <li><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
+        <li><a href="index.html">Blog Post 7</a></li>
+      </ul>
+    </aside>
+    <section>
+      <!-- <img src="../imgs/" alt="Blog Image"/> -->
+      <div>
+        <h1>Each vs. Map vs. Collect</h1>
+        <time>2015-09-20</time>
+      </div>
+      <div class="blog_text">
+        <p>
+          The Ruby enumerable methods are incredibly useful so I thought I'd take a look at three very similar methods and discuss how they differ.
+        </p>
+        <p>
+          Each is your basic iteration method and is called on collections of elements. It accepts a block which will be run on each element in the collection. While it runs on each element, the return value is discarded.
+        </p>
+        <p>
+          Map is a variation of Each. It also accepts a block which will be run on each element in the collection. The difference being that Map returns a new array with the results of running the block.
+        </p>
+        <p>
+          Collect is an alias for Map and works exactly the same.
+        </p>
+        <p>
+          Let's run these methods on the same array to illustrate the differences.
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>collection = [ 1, 2, 3 ]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>collection.each { |num| puts num } </li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>=> [1, 2, 3]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>collection.map { |num| puts num }</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>=> [nil, nil, nil]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>collection.collect { |num| puts num }</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>=> [nil, nil, nil]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>each_collection = collection.each { |num| num + 1 }</li>
+            <li>=> [1, 2, 3]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>map_collection = collection.map { |num| num + 1 }</li>
+            <li>=> [2, 3, 4]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+          <code>
+          <ul>
+            <li>collect_collection = collection.collect { |num| num + 1 }</li>
+            <li>=> [2, 3, 4]</li>
+          </ul>
+          </code>
+        </p>
+        <p>
+        </p>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/DavidOKeefe">
+              GITHUB
+            </a>
+            <li>
+              <a href="https://www.linkedin.com/in/davidpokeefe3">
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DavidPOKeefe3">
+                TWITTER
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
