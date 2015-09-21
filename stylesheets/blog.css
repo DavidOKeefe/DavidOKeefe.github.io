@@ -64,6 +64,7 @@ section ul {
   margin-bottom: 5em;
 }
 
-.blog_text ul li{
-  list-style-type: none;
+.code_gist {
+  padding-left: 8em;
+  max-width: 60%;
 }
