@@ -43,7 +43,7 @@
           Our journey towards object oriented design took another step forward this week with a dive into classes. Up until now we've used methods to solve challenges so our solutions have been somewhat procedural. Classes open up a new world of possibilities!
         </p>
         <p>
-          Let's start with some basics. Classes are blueprints to create objects. Those objects will have state and behavior. Classes are going to define state through instance variables and behavior through instance methods. Let's try to emulate a real world scenaro and create objects that will make us some coffee.
+          Let's start with some basics. Classes are blueprints to create objects. Those objects will have state and behavior. Classes are going to define state through instance variables and behavior through instance methods. Let's try to emulate a real world scenario and create objects that will make us some coffee.
         </p>
         <div class="code_gist">
           <script src="https://gist.github.com/DavidOKeefe/83675e8062f1006de43f.js"></script>
@@ -55,10 +55,10 @@
           <script src="https://gist.github.com/DavidOKeefe/55141bb929f2f2f9947c.js"></script>
         </div>
         <p>
-          Within our Brew class we created an instance method brew which uses the instance variable brew_type to call our V60 class. We pass the instance variable grounds to V60 and call that instance method make_coffee. There's more work needed to fully build this out but you can start seeing how classes can work together while keeping responsibilites seperate.
+          Within our Brew class we created an instance method brew which uses the instance variable brew_type to call our V60 class. We pass the instance variable grounds to V60 and call that instance method make_coffee. There's more work needed to fully build this out but you can start seeing how classes can work together while keeping responsibilities separate.
         </p>
         <p>
-          Last but not least, attr_reader is a ruby shortcut for creating wrapper methods for instance variables. Instance variables start with an '@' sign which allows them to be accesssed from anywhere within the class. By using attr_reader in our Brew class, the brew method was able to access the instance variable grounds without using the @ sign. When the brew method calls grounds it's actually calling the grounds method because attr_reader automatically created:
+          Last but not least, attr_reader is a ruby shortcut for creating wrapper methods for instance variables. Instance variables start with an '@' sign which allows them to be accessed from anywhere within the class. By using attr_reader in our Brew class, the brew method was able to access the instance variable grounds without using the @ sign. When the brew method calls grounds it's actually calling the grounds method because attr_reader automatically created:
         </p>
         <div class="code_gist">
           <script src="https://gist.github.com/DavidOKeefe/d9c63bb0301a46dfc512.js"></script>
