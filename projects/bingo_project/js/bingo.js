@@ -13,6 +13,7 @@ var winner = document.getElementsByClassName('winner')
 document.getElementById("newGameVisibility").style.display = ""
 document.getElementById("nextBallButtonVisibility").style.display = "none"
 document.getElementById("playAgainVisibility").style.display = "none"
+document.getElementById("nextBall").style.display = "none"
 
 function startGame(){
   board1 = generateBoard();
@@ -38,7 +39,8 @@ function playAgain(){
 
 function nextBall(){
   var selectedBall = randomBall();
-  nextBallText[0].innerHTML =  "The selected ball is " + selectedBall[0] + "-" + selectedBall[1] + ".";
+  document.getElementById("nextBall").style.display = ""
+  nextBallText[0].innerHTML = selectedBall[0] + "-" + selectedBall[1];
   updateBoard(selectedBall);
 }
 

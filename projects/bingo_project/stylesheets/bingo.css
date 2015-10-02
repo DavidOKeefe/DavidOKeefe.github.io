@@ -12,15 +12,37 @@ table {
 th, td {
 height: 40px;
 }
+
+#playerName1, #playerName2{
+  vertical-align: bottom;
+}
+
 td {
   /*border: 0.1em solid #d3d3d3;*/
   width: 40px;
+}
+#nextBall {
+  width: 115px;
+  height: 115px;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  background: url(../../../imgs/bingo_ball_image.jpg);
+  background-size: 115px 115px;
+  background-repeat: no-repeat;
+  border-radius: 115px;
 
-
+}
+.nextBall {
+  line-height: 85px;
+  vertical-align: middle;
 }
 
 section {
   margin-top: 1em;
+}
+
+#newGameVisibility{
+  height: 2em;
 }
 
 .topGameInfo{
@@ -32,7 +54,12 @@ section {
 }
 
 @media screen and (max-width: 800px){
-.playerBoard1, .playerBoard2 {
+#playerBoard1, #playerBoard2 {
   display: block;
+}
+
+#playerBoard1{
+  margin-top: 25px;
+}
 }
 
