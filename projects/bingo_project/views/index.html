@@ -3,12 +3,13 @@
   <head>
     <title>Bingo Project</title>
     <link rel="stylesheet" type="text/css" href="../../../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bingo.css" />
   </head>
   <body>
     <header>
       <img class="Self-Portrait" src="../../../imgs/Self-Image.jpg" alt="icon"/>
       <h1 class="Banner">
-      <a class ="Banner-Link"href="mailto:davidpokeefe3@gmail.com" target="_self">
+      <a class ="Banner-Link" href="mailto:davidpokeefe3@gmail.com" target="_self">
         DAVID O'KEEFE
       </a>
       </h1>
@@ -21,116 +22,123 @@
       </nav>
     </header>
     <section>
-      <div id="newGameVisibility"
-        <p>Start a game of bingo</p>
-        <button class="startGame" type="button" onclick="startGame()">Play!</button>
+      <div class="topGameInfo">
+        <div id="newGameVisibility">
+          <p>Start a game of bingo</p>
+          <button class="startGame" type="button" onclick="startGame()">Play!</button>
+        </div>
+        <p class="nextBall"></p>
       </div>
-      <p class="nextBall"></p>
-      <p class="winner"></p>
-      <div class="playerBoard1">
-      <table>
-        <thead>
-          <tr>
-            <th class="boardHeading1"></th>
-            <th class="boardHeading1"></th>
-            <th class="boardHeading1"></th>
-            <th class="boardHeading1"></th>
-            <th class="boardHeading1"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-            <td class="boardDisplay1"></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="playerBoard1">
+        <table>
+          <thead>
+            <tr>
+              <th id="playerName1" colspan="5"></th>
+            </tr>
+            <tr>
+              <th class="boardHeading1"></th>
+              <th class="boardHeading1"></th>
+              <th class="boardHeading1"></th>
+              <th class="boardHeading1"></th>
+              <th class="boardHeading1"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+              <td id="boardCell" class="boardDisplay1"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="playerBoard2">
-      <table>
-        <thead>
-          <tr>
-            <th class="boardHeading2"></th>
-            <th class="boardHeading2"></th>
-            <th class="boardHeading2"></th>
-            <th class="boardHeading2"></th>
-            <th class="boardHeading2"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-          </tr>
-          <tr>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-            <td class="boardDisplay2"></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="playerBoard2">
+        <table>
+          <thead>
+            <tr>
+              <th id="playerName2" colspan="5"></th>
+            </tr>
+            <tr>
+              <th class="boardHeading2"></th>
+              <th class="boardHeading2"></th>
+              <th class="boardHeading2"></th>
+              <th class="boardHeading2"></th>
+              <th class="boardHeading2"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+            </tr>
+            <tr>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+              <td id="boardCell" class="boardDisplay2"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
       <div id="nextBallButtonVisibility">
         <button class="nextBallButton" type="button" onclick="nextBall()">Next Ball</button>
       </div>
+      <p class="winner"></p>
       <div id="playAgainVisibility">
         <p>Would you like to play again?</p>
         <button class="playAgain" type="button" onclick="playAgain()">Play!</button>

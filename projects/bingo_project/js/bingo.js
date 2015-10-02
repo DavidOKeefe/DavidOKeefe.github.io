@@ -1,11 +1,14 @@
 var bingoLetters = [ "B", "I", "N", "G", "O" ]
 var board1 = []
 var board2 = []
+var playerName1 = document.getElementById('playerName1')
+var playerName2 = document.getElementById('playerName2')
 var boardHeading1 = document.getElementsByClassName('boardHeading1');
 var boardHeading2 = document.getElementsByClassName('boardHeading2');
 var boardDisplay1 = document.getElementsByClassName('boardDisplay1');
 var boardDisplay2 = document.getElementsByClassName('boardDisplay2');
 var nextBallText = document.getElementsByClassName('nextBall');
+var boardTableCell = document.querySelectorAll('td[id]');
 var winner = document.getElementsByClassName('winner')
 document.getElementById("newGameVisibility").style.display = ""
 document.getElementById("nextBallButtonVisibility").style.display = "none"
@@ -18,10 +21,13 @@ function startGame(){
 }
 
 function showGame(board1, board2) {
+  playerName1.innerHTML = "Player 1"
+  playerName2.innerHTML = "Player 2"
   for (var i=0; i < boardHeading1.length; i++){ boardHeading1[i].innerHTML = bingoLetters[i]; }
   for (var i=0; i < boardHeading2.length; i++){ boardHeading2[i].innerHTML = bingoLetters[i]; }
   for (var i=0; i < boardDisplay1.length; i++){ boardDisplay1[i].innerHTML = board1[i]; }
   for (var i=0; i < boardDisplay2.length; i++){ boardDisplay2[i].innerHTML = board2[i]; }
+  for (var i=0; i < boardTableCell.length; i++){ boardTableCell[i].style.border = "0.1em solid #d3d3d3"; }
   document.getElementById("newGameVisibility").style.display = "none";
   document.getElementById("nextBallButtonVisibility").style.display = "";
 }

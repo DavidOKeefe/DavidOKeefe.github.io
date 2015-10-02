@@ -1,0 +1,37 @@
+#playerBoard1, #playerBoard2 {
+  display: inline-block;
+  width: 25%;
+  margin: 1em auto 1em auto;
+}
+table {
+  display: inline-table;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+th, td {
+height: 40px;
+}
+td {
+  /*border: 0.1em solid #d3d3d3;*/
+  width: 40px;
+
+}
+
+section {
+  margin-top: 1em;
+}
+
+.topGameInfo{
+  height: 2em;
+}
+
+#nextBallButtonVisibility{
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 800px){
+.playerBoard1, .playerBoard2 {
+  display: block;
+}
+
