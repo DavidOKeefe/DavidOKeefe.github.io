@@ -38,7 +38,7 @@ function playAgain(){
 
 function nextBall(){
   var selectedBall = randomBall();
-  nextBallText[0].innerHTML =  "The selected ball is " + selectedBall[0] + ", " + selectedBall[1] + ".";
+  nextBallText[0].innerHTML =  "The selected ball is " + selectedBall[0] + "-" + selectedBall[1] + ".";
   updateBoard(selectedBall);
 }
 
@@ -47,6 +47,9 @@ function updateBoard(selectedBall){
   board2 = checkBoardForMatch(board2, selectedBall);
   for (var i=0; i < boardDisplay1.length; i++){ boardDisplay1[i].innerHTML = board1[i]; }
   for (var i=0; i < boardDisplay1.length; i++){ boardDisplay2[i].innerHTML = board2[i]; }
+  for (var i=0; i < boardTableCell.length; i++){
+    if (boardTableCell[i].innerHTML === 'X'){ boardTableCell[i].style.backgroundColor = "#d3d3d3"; }
+  }
   checkBoardforWinner();
 }
 
@@ -61,7 +64,7 @@ function checkBoardforWinner(){
 }
 
 function winningMessage(player){
-  winner[0].innerHTML = player + " Wins!";
+  winner[0].innerHTML = "Bingo! " + player + " wins!";
   document.getElementById("nextBallButtonVisibility").style.display = "none";
   document.getElementById("playAgainVisibility").style.display = "";
 }
