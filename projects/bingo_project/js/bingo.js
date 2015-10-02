@@ -5,6 +5,10 @@ var boardHeading = document.getElementsByClassName('boardHeading');
 var boardDisplay = document.getElementsByClassName('boardDisplay');
 var nextBallText = document.getElementsByClassName('nextBall');
 var winner = document.getElementsByClassName('winner')
+document.getElementById("newGameVisibility").style.display = ""
+document.getElementById("nextBallButtonVisibility").style.display = "none"
+document.getElementById("playAgainVisibility").style.display = "none"
+
 
 function startGame(){
   board = generateBoard();
@@ -14,6 +18,12 @@ function startGame(){
   for (var i=0; i < boardDisplay.length; i++){
       boardDisplay[i].innerHTML = board[i];
   }
+  document.getElementById("newGameVisibility").style.display = "none"
+  document.getElementById("nextBallButtonVisibility").style.display = ""
+}
+
+function playAgain(){
+  window.location.reload();
 }
 
 function nextBall(){
@@ -25,6 +35,8 @@ function nextBall(){
   }
   if(winningBoard(board) == true){
     winner[0].innerHTML = winningMessage
+    document.getElementById("nextBallButtonVisibility").style.display = "none"
+    document.getElementById("playAgainVisibility").style.display = ""
   }
 }
 
@@ -40,21 +52,11 @@ function checkBoardForMatch(board, selectedBall){
 function randomBall(){
   var randomBall = []
   randomBall.push(bingoLetters[randomNumber(0,4)])
-    if (randomBall == 'B'){
-      randomBall.push(randomNumber(1,15))
-    }
-    else if(randomBall == 'I'){
-      randomBall.push(randomNumber(16,30))
-    }
-    else if(randomBall == 'N'){
-      randomBall.push(randomNumber(31,45))
-    }
-    else if(randomBall == 'G'){
-      randomBall.push(randomNumber(46,60))
-    }
-    else if(randomBall == 'O'){
-      randomBall.push(randomNumber(61,75))
-    }
+    if (randomBall == 'B'){randomBall.push(randomNumber(1,15))}
+    else if(randomBall == 'I'){ randomBall.push(randomNumber(16,30)) }
+    else if(randomBall == 'N'){ randomBall.push(randomNumber(31,45)) }
+    else if(randomBall == 'G'){ randomBall.push(randomNumber(46,60)) }
+    else if(randomBall == 'O'){ randomBall.push(randomNumber(61,75)) }
   return randomBall
 }
 
@@ -62,32 +64,38 @@ function randomNumber(min, max){
   return Math.floor(Math.random()* (max-min+1)+min);
 }
 
-// Generate Bingo Board
-function generateBoard(){
-  this.board = []
-  var min = 1;
-  var max = 15;
-  var selectedNumber = randomNumber(min,max);
-  for (var i=1; i<=25; i++){
-    // while((selectedNumber in this.board) === true){ selectedNumber = randomNumber(min,max); }
-    this.board.push(randomNumber(min,max));
-    min += 15;
-    max += 15;;
-    if(i % 5 == 0){
-      min = 1;
-      max = 15;
+function shuffle(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
-
-  }
-  setFreeSpace();
-  return this.board
+    return array;
 }
+
+  function generateBoard(){
+    this.board = [];
+    var columnB = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+    var columnI = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+    var columnN = [31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]
+    var columnG = [46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]
+    var columnO = [61,62,63,64,65,66,67,68,69,70,71,72,73,74,75]
+    while(this.board.length < 25) {
+      board.push(shuffle(columnB).pop());
+      board.push(shuffle(columnI).pop());
+      board.push(shuffle(columnN).pop());
+      board.push(shuffle(columnG).pop());
+      board.push(shuffle(columnO).pop());
+    }
+    setFreeSpace();
+    return this.board
+  }
 
 function setFreeSpace(){
   this.board[12] = 'X'
 }
 
-// Winning Board
 function winningBoard(playersBoard){
   if ((playersBoard[0] == "X" && playersBoard[1] == "X" && playersBoard[2] == "X" && playersBoard[3] == "X" && playersBoard[4] == "X") ||
       (playersBoard[5] == "X" && playersBoard[6] == "X" && playersBoard[7] == "X" && playersBoard[8] == "X" && playersBoard[9] == "X") ||

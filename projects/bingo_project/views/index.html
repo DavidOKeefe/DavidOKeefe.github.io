@@ -21,8 +21,12 @@
       </nav>
     </header>
     <section>
-      <p>Would you like to play a game of Bingo?</p>
-      <button class="startGame" type="button" onclick="startGame()">Yes!</button>
+      <div id="newGameVisibility"
+        <p>Start a game of bingo</p>
+        <button class="startGame" type="button" onclick="startGame()">Play!</button>
+      </div>
+      <p class="nextBall"></p>
+      <p class="winner"></p>
       <table>
         <thead>
           <tr>
@@ -71,9 +75,13 @@
           </tr>
         </tbody>
       </table>
-      <button class="nextBallButton" type="button" onclick="nextBall()">Next Ball</button>
-      <p class="nextBall"></p>
-      <p class="winner"></p>
+      <div id="nextBallButtonVisibility">
+        <button class="nextBallButton" type="button" onclick="nextBall()">Next Ball</button>
+      </div>
+      <div id="playAgainVisibility">
+        <p>Would you like to play again?</p>
+        <button class="playAgain" type="button" onclick="playAgain()">Play!</button>
+      </div>
       <script src="../js/bingo.js"></script>
     </section>
     <footer>
