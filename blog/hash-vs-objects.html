@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hash vs Object Literal</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+    <header>
+      <img class="Self-Portrait" src="../imgs/Self-Image.jpg" alt="icon"/>
+      <h1 class="Banner">
+      <a class ="Banner-Link" href="mailto:davidpokeefe3@gmail.com" target="_self">
+        DAVID O'KEEFE
+      </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="index.html">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+        <li><a href="t1-git-blog.html">Version Control</a></li>
+        <li><a href="css-concepts.html">CSS Concepts</a></li>
+        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+        <li><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
+        <li><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
+        <li><a href="ruby-classes.html">Intro to Classes</a></li>
+        <li><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
+      </ul>
+    </aside>
+    <section>
+      <div>
+        <h1>Ruby Hash vs JavaScript Object</h1>
+        <time>2015-10-04</time>
+      </div>
+      <div class="blog_text">
+        <p>
+          This week we switched our studies from Ruby to Javascript so after a week of exposure I wanted to reflect back on some of the differences between the two languages starting with JavaScript objects.
+        </p>
+        <p>
+          A JavaScript object is an unordered collection of properties, each with a key and a value. This sounds very similar to the Ruby hash and for the most part it is.
+        </p>
+        <p>
+          Ruby Hash
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/ruby_hash_menu.png" alt="Ruby Hash Image"/>
+        </p>
+        <p>
+          JavaScript Object
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/js_hash_menu.png" alt="JS Hash Image"/>
+        </p>
+        <p>
+          Other than a few differences in syntax, the code above is the same.
+        </p>
+        <p>
+          JavaScript objects are more than just associative arrays. A JS object can inherit properties from another object, referred to as its "prototype". Class based languages like Ruby also have inheritance but since JavaScript doesn't have classes, inheritance is accomplished through objects exclusively.
+        </p>
+        <p>
+          When we created our <code>menu</code> object its prototype by default was <code>Object.prototype</code>. Here's the inheritance chain for our menu object:
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/menu_prototype_chain.png" alt="Menu Prototype Chain Image"/>
+        </p>
+        <p>
+          Let's create another object and set <code>menu</code> as its prototype:
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/lunchMenu_object.png" alt="lunchMenu Object Image"/>
+        </p>
+        <p>
+          We've created a <code>lunchMenu</code> object and set its prototype equal to menu. Its prototype chain is:
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/lunchMenu_prototype_chain.png" alt="lunchMenu Prototype Chain Image"/>
+        </p>
+        <p>
+          Let's add a property to the <code>lunchMenu</code>object and use <code>console.log</code> to display our object:
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/lunchMenu_sandwich.png" alt="lunchMenu Sandwich Image"/>
+        </p>
+        <p>
+          Nothing too surprising here, the <code>lunchMenu</code> object contains the property we added.
+        </p>
+        <p>
+          <code>lunchMenu</code> inherits from menu so we can also access inherited properties
+        </p>
+        <p>
+          <img class="hash_obj_img" src="imgs/lunchMenu_latte.png" alt="lunchMenu Latte Image"/>
+        </p>
+        <p>
+          The returns is <code>4</code> even though <code>lunchMenu</code> doesn't contain a latte property. That property is contained in the prototype object <code>menu</code> and is inherited. As you can see, inheritance adds complexity beyond the dictionary like structure of a Ruby hash. I'm interested to learn more about the best practices when implementing this functionality.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/DavidOKeefe">
+              GITHUB
+            </a>
+            <li>
+              <a href="https://www.linkedin.com/in/davidpokeefe3">
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DavidPOKeefe3">
+                TWITTER
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
