@@ -68,3 +68,9 @@ section ul {
   padding-left: 8em;
   max-width: 60%;
 }
+
+.hash_obj_img{
+  border: none;
+  max-height:95%;
+  max-width:95%;
+}
