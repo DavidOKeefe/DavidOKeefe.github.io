@@ -4,6 +4,7 @@
     <title>Arrays and Hashes</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
@@ -13,7 +14,7 @@
         DAVID O'KEEFE
       </a>
       </h1>
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li><a href="../index.html">HOME</a></li>
           <li><a href="../about.html">ABOUT</a></li>
@@ -21,76 +22,78 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <ul>
-        <li><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
-        <li><a href="t1-git-blog.html">Version Control</a></li>
-        <li><a href="css-concepts.html">CSS Concepts</a></li>
-        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-        <li><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
-        <li><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
-        <li><a href="ruby-classes.html">Intro to Classes</a></li>
-        <li><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
-      </ul>
-    </aside>
-    <section>
-      <img src="../imgs/Rooftops.jpg" alt="Blog Image"/>
-      <div>
-        <h1>Arrays and Hashes</h1>
-        <time>2015-09-13</time>
-      </div>
-      <div class="blog_text">
-        <h2>Arrays</h2>
-        <p>
-          Arrays are ordered collections which can contain any Object type including Integers, Strings, and even other Arrays or Hashses.
-        </p>
-        <p>
-          For example, <code>x = [1, 2, 3, 4]</code> is an Array containing four elements.
-        </p>
-        <p>
-          Arrays are Integer Indexed starting at 0 so our four element Array has the following Indexes:
-        </p>
-          <img class="array_indexing" src="imgs/Array_Indexing.jpg" alt="Array Indexing"/>
-        <p>
-          Elements from within the Array can be accessed using the <code>#[]</code> Method so as an example: <code>x[2] #=> 3</code>
-        </p>
-        <p>
-          Once created, there are many Array Methods that can be used to:
-        </p>
+    <div class="main-content">
+      <aside class="blog-nav">
         <ul>
-          <li>Obtain information about the Array</li>
-          <li>Add elements to the Array</li>
-          <li>Remove elements from the Array</li>
-          <li>Iterate over the Array</li>
-          <li>Select items from the Array</li>
+          <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a>  </li>
+          <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
+          <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
+          <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></  li>
+          <li class="blogLinks"><a href="designing-for-accessibility.html">Designing   for Accessibility</a></li>
+          <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs.   Collect</a></li>
+          <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
+          <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs   JavaScript Object</a></li>
         </ul>
-        <p>
-          For more information on the various Array Methods available, check out the API on Arrays at <a href="http://ruby-doc.org/core-2.2.0/Array.html">http://ruby-doc.org/core-2.2.0/Array.html</a>
-        </p>
-        <h2>Hashes</h2>
-        <p>
-          Like Arrays, Hashes are also a collection of Objects. The difference is in the storage format. Instead of using Indexed Positioning, Hashes use Keys to identify Values. Both Keys and Values can use any Object type. Hashes are often referred to as being dictionary-like because Values can be looked up using their Keys.
-        </p>
-        <p>
-          Here's a basic Hash:
-        </p>
-        <p>
-          <code>concert_tshirt_quantity = { s: 14, m: 12, l: 28, xl: 17 }</code>
-        </p>
-        <p>
-          Similar to to Arrays, information in our Hash can be accessed using the <code>#[]</code> method. For example: <code>concert_tshirt_quantity[:m] #=> 12</code>
-        </p>
-        <p>
-          One of the advantages of using Hashes over Arrays is that they are not order dependent and that keys themselves can have meaning as opposed to Array indexing which only represents positioning.
-          <p>
-            Like Arrays, Hashes also have many methods available. For more information on the various Hash Methods available, check out the API on Hashes at <a href="http://ruby-doc.org/core-2.2.3/Hash.html">http://ruby-doc.org/core-2.2.3/Hash.html</a>
-          </p>
-          <p>
-            Both Arrays and Hashes can utilize the Enumerable module to take advantage of methods. More information can be found at <a href="http://ruby-doc.org/core-2.2.3/Enumerable.html">http://ruby-doc.org/core-2.2.3/Enumerable.html</a>
-          </p>
+      </aside>
+      <section class="blog-content">
+        <img src="../imgs/Rooftops.jpg" alt="Blog Image"/>
+        <div>
+          <h1>Arrays and Hashes</h1>
+          <time>2015-09-13</time>
         </div>
-      </section>
-      <footer>
+        <div class="blog_text">
+          <h2>Arrays</h2>
+          <p>
+            Arrays are ordered collections which can contain any Object type   including Integers, Strings, and even other Arrays or Hashses.
+          </p>
+          <p>
+            For example, <code>x = [1, 2, 3, 4]</code> is an Array containing four   elements.
+          </p>
+          <p>
+            Arrays are Integer Indexed starting at 0 so our four element Array has   the following Indexes:
+          </p>
+            <img class="array_indexing" src="imgs/Array_Indexing.jpg" alt="Array   Indexing"/>
+          <p>
+            Elements from within the Array can be accessed using the <code>#[]</code>   Method so as an example: <code>x[2] #=> 3</code>
+          </p>
+          <p>
+            Once created, there are many Array Methods that can be used to:
+          </p>
+          <ul>
+            <li>Obtain information about the Array</li>
+            <li>Add elements to the Array</li>
+            <li>Remove elements from the Array</li>
+            <li>Iterate over the Array</li>
+            <li>Select items from the Array</li>
+          </ul>
+          <p>
+            For more information on the various Array Methods available, check out   the API on Arrays at <a href="http://ruby-doc.org/core-2.2.0/Array.html">  http://ruby-doc.org/core-2.2.0/Array.html</a>
+          </p>
+          <h2>Hashes</h2>
+          <p>
+            Like Arrays, Hashes are also a collection of Objects. The difference is   in the storage format. Instead of using Indexed Positioning, Hashes use   Keys to identify Values. Both Keys and Values can use any Object type.   Hashes are often referred to as being dictionary-like because Values can   be looked up using their Keys.
+          </p>
+          <p>
+            Here's a basic Hash:
+          </p>
+          <p>
+            <code>concert_tshirt_quantity = { s: 14, m: 12, l: 28, xl: 17 }</code>
+          </p>
+          <p>
+            Similar to to Arrays, information in our Hash can be accessed using the <  code>#[]</code> method. For example: <code>concert_tshirt_quantity[:m]   #=> 12</code>
+          </p>
+          <p>
+            One of the advantages of using Hashes over Arrays is that they are not   order dependent and that keys themselves can have meaning as opposed to   Array indexing which only represents positioning.
+            <p>
+              Like Arrays, Hashes also have many methods available. For more   information on the various Hash Methods available, check out the API   on Hashes at <a href="http://ruby-doc.org/core-2.2.3/Hash.html">http://  ruby-doc.org/core-2.2.3/Hash.html</a>
+            </p>
+            <p>
+              Both Arrays and Hashes can utilize the Enumerable module to take   advantage of methods. More information can be found at <a href="http://  ruby-doc.org/core-2.2.3/Enumerable.html">http://ruby-doc.org/core-2.2.3  /Enumerable.html</a>
+            </p>
+          </div>
+        </section>
+    </div>
+    <footer>
         <nav>
           <ul>
             <li>
@@ -110,5 +113,5 @@
             </ul>
           </nav>
         </footer>
-      </body>
-    </html>
+  </body>
+</html>

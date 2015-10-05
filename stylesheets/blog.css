@@ -1,11 +1,36 @@
+/**{
+  border: 1px dotted grey;
+}*/
+
 aside {
-  float: left;
-  margin-top: 2.5em;
-  padding: 0 2em 0 0;
+  float: right;
+  margin: 2.5em -16em 0 0;
+  padding: 0 0 0 0em;
 }
 
-aside a:link {
-  text-decoration: underline;
+.blogLinks a {
+  color: #99536A;
+  font-size: 1.0em;
+  font-family: 'Alegreya Sans SC', sans-serif,;
+  font-weight: 300;
+}
+
+
+.blogLinks a:link {
+  color: #99536A;
+}
+
+.blogLinks a:visited{
+  color: #99536A;
+}
+
+.blog-content {
+  padding: 0 3em 1em 3em;
+}
+
+.blog-nav {
+  font-size: 0.75em;
+  text-decoration: none;
 }
 
 aside ul {
@@ -14,11 +39,9 @@ aside ul {
 
 section {
   display: inline-block;
-  float: right;
-  width: 80%;
-  height: 30em;
+  width: 60%;
   text-align: center;
-  margin-top: 2.5em;
+  margin: 2.5em 0 0 0;
 }
 
 section h1 {
@@ -69,12 +92,18 @@ section ul {
 }
 
 .code_gist {
-  padding-left: 8em;
-  max-width: 60%;
+  padding-left: 2em;
+  max-width: 80%;
 }
 
 .hash_obj_img{
   border: none;
   max-height:95%;
   max-width:95%;
+}
+
+@media screen and (max-width: 1150px){
+ .main-content {
+  padding: 0 6em 0 6em;
+}
 }
