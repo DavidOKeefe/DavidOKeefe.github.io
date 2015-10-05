@@ -8,7 +8,7 @@ body {
   padding: 0px;
   border:0;
   width: 100%;
-  background-color: #FFF2E7
+  background-color: #FFFEFC;
 }
 
 a {
@@ -21,13 +21,14 @@ a {
 header {
   width: 100%;
   background-color: #DE8642;
-  border-bottom: 0.1em solid #d3d3d3;
+  border-bottom: 0.1em solid #928A7F;
   bottom: 0;
   height: 6em;
 }
 
 .Self-Portrait {
   max-height: 6em;
+  border-radius: 6em;
   margin: 1em 1em 0 1em;
   padding: 0.3em;
   border: 0.01em solid #d3d3d3;
@@ -43,7 +44,7 @@ header {
 
 .Banner-Link {
   text-decoration: none;
-  color: black;
+  color: #393229;
 }
 
 header nav {
@@ -59,6 +60,7 @@ nav ul li{
 nav li + li:before{
     content: " | ";
     padding: 0 1em;
+    color: #393229;
 }
 
 section {
@@ -84,13 +86,13 @@ figure img{
   height: 95%;
   margin: auto;
   padding: 0.3em;
-  border: 0.1em solid #d3d3d3;
+  border: 0.1em solid #DDDAD6;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  border-top: 0.1em solid #d3d3d3;
+  border-top: 0.1em solid #928A7F;
   width: 100%;
   height: 3em;
   text-align: center;
@@ -116,4 +118,14 @@ footer {
   margin: auto;
   padding: 0.3em;
   border: 0.1em solid #d3d3d3;
+}
+
+a:link {
+  text-decoration: none;
+  color: #393229;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #393229;
 }
