@@ -1,0 +1,47 @@
+#rubyBasics{
+  display:none;
+}
+#rubyEnumerables{
+  display:none;
+}
+#rubyHashArray{
+  display:none;
+}
+#javascriptObjects{
+  display:none;
+}
+#javascriptPrototypes{
+  display:none;
+}
+#looping{
+  display:none;
+}
+#htmlBasics{
+  display:none;
+}
+#cssBasics{
+  display:none;
+}
+#cssPositioning{
+  display:none;
+}
+#gitBasics{
+  display:none;
+}
+#sqlBasics{
+  display:none;
+}
+#cheatSheetDropdown{
+  float: left;
+}
+.cheat-sheet-content{
+  margin-top: 3em
+}
+.cheat-sheet-content p{
+  text-align: left;
+}
+.cheat_sheet_image{
+  max-height:85%;
+  max-width:85%;
+}
+
