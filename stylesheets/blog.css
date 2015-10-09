@@ -76,7 +76,7 @@ section img{
 
 p {
   text-align: left;
-  padding: 0 4em 0 2em;
+  padding: 0 2em 0 2em;
   font-size: 0.75em;
   color: #393229;
 }
@@ -105,8 +105,8 @@ section ul {
 
 .regExImg{
   border: none;
-  max-height:85%;
-  max-width:85%;
+  max-height:80%;
+  max-width:80%;
 }
 
 @media screen and (max-width: 1150px){
