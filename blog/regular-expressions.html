@@ -52,34 +52,34 @@
           <p>
             Regular expressions are simple and powerful. Before diving into some of their more complex capabilities, let's start with a basic example to show the syntax.
           </p>
-          <img src="../imgs/is_georgia_location.png" alt="Georgia Location Example"/>
+          <img src="imgs/is_georgia_location.png" alt="Georgia Location Example"/>
           <p>
             In this example, the location argument is compared using =~ to the RegEx statement which appears between the two forward slashes. Any pattern between those two slashes will be compared against the string and will return true if the pattern is found.
           </p>
           <p>
             Matching against letters and numbers is as simple as the example above. Punctuation characters have some special meaning so if you want to find matches that include the period punctuation, use a backslash to turn off the special meaning like so:
           </p>
-          <img src="../imgs/contains_pi.png" alt="Contains PI Example"/>
+          <img src="imgs/contains_pi.png" alt="Contains PI Example"/>
           <p>
             Regular expressions can evaluate against sets as well by including the set between square brackets.
           </p>
-          <img src="../imgs/contains_number.png" alt="Contains Number Example"/>
+          <img src="imgs/contains_number.png" alt="Contains Number Example"/>
           <p>
             If writing out each number is too much work there are shortcuts. The following three will evaluate any digit.
           </p>
-          <img src="../imgs/digits_pattern.png" alt="Digits Pattern Example"/>
+          <img src="imgs/digits_pattern.png" alt="Digits Pattern Example"/>
           <p>
             There are shortcuts for letters also. Letter evaluation is case sensitive so the first two examples only search for lower case letters. The second two search for any letter regardless of case.
           </p>
-          <img src="../imgs/letter_pattern.png" alt="Letter Pattern Example"/>
+          <img src="imgs/letter_pattern.png" alt="Letter Pattern Example"/>
           <p>
             The vertical bar can be used to search for alternatives. The following will return true for any string containing either a train or a plane.
           </p>
-          <img src="../imgs/alternatives_pattern.png" alt="Alternatives Example"/>
+          <img src="imgs/alternative_patterns.png" alt="Alternatives Example"/>
           <p>
             Eloquent Ruby gives a good overview of regular expressions and one example they use is searching a string for something like '09:24 AM'. Using what we learned above this could be solved as follows:
           </p>
-          <img src="../imgs/contains_time.png" alt="Contains Time Example"/>
+          <img src="imgs/contains_time.png" alt="Contains Time Example"/>
           <p>
             This is just scratching the surface of what's possible with regular expressions but should provide a good starting point to understand how they're used.
           </p>
