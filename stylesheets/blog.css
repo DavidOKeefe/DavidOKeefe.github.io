@@ -76,7 +76,7 @@ section img{
 
 p {
   text-align: left;
-  padding: 0 4em 0 2em;
+  padding: 0 2em 0 2em;
   font-size: 0.75em;
   color: #393229;
 }
@@ -88,6 +88,7 @@ section ul {
 }
 
 .blog_text {
+  font-weight: 300;
   margin-bottom: 5em;
 }
 
@@ -98,8 +99,14 @@ section ul {
 
 .hash_obj_img{
   border: none;
-  max-height:95%;
-  max-width:95%;
+  max-height:85%;
+  max-width:85%;
+}
+
+.regExImg{
+  border: none;
+  max-height:80%;
+  max-width:80%;
 }
 
 @media screen and (max-width: 1150px){

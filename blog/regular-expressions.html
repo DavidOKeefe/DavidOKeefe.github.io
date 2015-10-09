@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hash vs Object Literal</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <header>
+      <img class="Self-Portrait" src="../imgs/Self-Image.jpg" alt="icon"/>
+      <h1 class="Banner">
+      <a class ="Banner-Link" href="mailto:davidpokeefe3@gmail.com" target="_self">
+        DAVID O'KEEFE
+      </a>
+      </h1>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="index.html">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-content">
+      <aside class="blog-nav">
+        <ul>
+          <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+          <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
+          <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
+          <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li class="blogLinks"><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
+          <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
+          <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
+          <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
+          <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
+        </ul>
+      </aside>
+      <section>
+        <div>
+          <h1>Regular Expressions</h1>
+          <time>2015-10-09</time>
+        </div>
+        <div class="blog_text">
+          <p>
+            Every so often while solving Ruby exercises, I come across situations where I need to evaluate strings. The Ruby String API has lots of methods to choose from but as I start building out logic to iterate through characters, I remember - Regular Expressions.
+          </p>
+          <p>
+            A regular expression (or RegEx) is basically string pattern matching. You construct a pattern and use it to compare against strings to determine if that pattern exists within the string.
+          </p>
+          <p>
+            Regular expressions are simple and powerful. Before diving into some of their more complex capabilities, let's start with a basic example to show the syntax.
+          </p>
+          <img class="regExImg" src="imgs/is_georgia_location.png" alt="Georgia Location Example"/>
+          <p>
+            In this example, the location argument is compared (using =~) to the RegEx statement which appears between the two forward slashes. Any pattern between those two slashes will be compared against the string and will return true if the pattern is found.
+          </p>
+          <p>
+            Matching against letters and numbers is as simple as the example above. Punctuation characters have some special meaning so if you want to find matches that include the period punctuation, use a backslash to turn off the special meaning like so:
+          </p>
+          <img class="regExImg" src="imgs/contains_pi.png" alt="Contains PI Example"/>
+          <p>
+            Regular expressions can evaluate against sets as well by including the set between square brackets.
+          </p>
+          <img class="regExImg" src="imgs/contains_number.png" alt="Contains Number Example"/>
+          <p>
+            There are shortcuts if writing out each number is too much work. The following three expressions will all evaluate any digit.
+          </p>
+          <img class="regExImg" src="imgs/digits_pattern.png" alt="Digits Pattern Example"/>
+          <p>
+            There are shortcuts for letters also. Letter evaluation is case sensitive so the first two examples only search for lower case letters. The second two search for any letter regardless of case.
+          </p>
+          <img class="regExImg" src="imgs/letter_pattern.png" alt="Letter Pattern Example"/>
+          <p>
+            The vertical bar can be used to search for alternatives. The following will return true for any string containing either a train or a plane.
+          </p>
+          <img class="regExImg" src="imgs/alternative_patterns.png" alt="Alternatives Example"/>
+          <p>
+            <a href="http://eloquentruby.com/" target="_blank">Eloquent Ruby</a> gives a good overview of regular expressions and one of the more complex examples they use is how to search a string for time in the following format: '09:24 AM'. Using what we learned above this could be solved as follows:
+          </p>
+          <img class="regExImg" src="imgs/contains_time.png" alt="Contains Time Example"/>
+          <p>
+            This should provide a good starting point to understand how RegEx is used and give enough understanding to start unpacking some of the more complex solutions. When searching online I'm amazed by how some solutions can be so succinct.
+          </p>
+          <p>
+            A resource I like to use while building regular expressions is <a href="http://rubular.com/" target="_blank">rubular.com</a> This site allows you to build out a RegEx statement and test against strings.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/DavidOKeefe">
+              GITHUB
+            </a>
+            <li>
+              <a href="https://www.linkedin.com/in/davidpokeefe3">
+                LINKEDIN
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DavidPOKeefe3">
+                TWITTER
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </body>
+  </html>
