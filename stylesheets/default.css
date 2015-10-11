@@ -93,8 +93,8 @@ figure {
 
 figure img{
   display: inline-block;
-  max-height: 12em;
-  max-width: 12em;
+  max-height: 25em;
+  max-width: 25em;
   width: 95%;
   height: 95%;
   margin: auto;
