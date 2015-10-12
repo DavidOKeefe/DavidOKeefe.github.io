@@ -42,9 +42,9 @@ header {
 }
 
 .Banner {
-  position: relative;
-  left: 1em;
-  top: -1em;
+  position: absolute;
+  left: 6.5em;
+  top: -.5 em;
   display: inline-block;
 }
 
@@ -165,26 +165,19 @@ footer a:visited{
   text-shadow: 0 0.5px darkgrey;
 }
 
-@media screen and (max-width: 1329px){
+@media screen and (max-width: 979px){
 .Banner-Link  {
   font-size: 2em;
+
+}
+.Banner {
+  left: 6.5em;
+  top: -.5em;
 }
 }
 
-@media screen and (max-width: 1217px){
+@media screen and (max-width: 600px){
 .Banner-Link  {
   font-size: 1.5em;
-}
-}
-
-@media screen and (max-width: 710px){
-.Banner-Link  {
-  font-size: 1.0em;
-}
-}
-
-@media screen and (max-width: 610px){
-.Banner-Link  {
-  font-size: 1.0em;
 }
 }
