@@ -23,46 +23,48 @@
       </nav>
     </header>
     <div class="main-content">
-    <aside class="blog-nav">
-      <ul>
-        <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
-        <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
-        <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
-        <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-        <li class="blogLinks"><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
-        <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
-        <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
-        <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
-        <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
-      </ul>
-    </aside>
-    <section>
-      <!-- <img src="../imgs/" alt="Blog Image"/> -->
-      <div>
-        <h1>Each vs. Map vs. Collect</h1>
-        <time>2015-09-20</time>
-      </div>
-      <div class="blog_text">
-        <p>
-          The Ruby enumerable methods are incredibly useful so I thought I'd take a look at three very similar methods and discuss how they differ.
-        </p>
-        <p>
-          Each is your basic iteration method and is called on collections of elements. It accepts a block which will be run on each element in the collection. While it runs on each element, the return value is discarded.
-        </p>
-        <p>
-          Map is a variation of Each. It also accepts a block which will be run on each element in the collection. The difference being that Map returns a new array with the results of running the block.
-        </p>
-        <p>
-          Collect is an alias for Map and works exactly the same.
-        </p>
-        <p>
-          Let's run these methods on the same array to illustrate the differences.
-        </p>
-        <div class="code_gist">
-        <script src="https://gist.github.com/DavidOKeefe/43dcd6385bab1d72e6a7.js"></script>
+      <aside class="blog-nav">
+        <ul>
+          <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+          <li class="blogLinks"><a href="thinking-about-time.html">Thinking about Time</a></li>
+          <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
+          <li class="blogLinks"><a href="forking-and-cloning.html">Forking and Cloning</a></li>
+          <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
+          <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li class="blogLinks"><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
+          <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
+          <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
+          <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
+          <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
+        </ul>
+      </aside>
+      <section>
+        <!-- <img src="../imgs/" alt="Blog Image"/> -->
+        <div>
+          <h1>Each vs. Map vs. Collect</h1>
+          <time>2015-09-20</time>
         </div>
-      </div>
-    </section>
+        <div class="blog_text">
+          <p>
+            The Ruby enumerable methods are incredibly useful so I thought I'd take a look at three very similar methods and discuss how they differ.
+          </p>
+          <p>
+            Each is your basic iteration method and is called on collections of elements. It accepts a block which will be run on each element in the collection. While it runs on each element, the return value is discarded.
+          </p>
+          <p>
+            Map is a variation of Each. It also accepts a block which will be run on each element in the collection. The difference being that Map returns a new array with the results of running the block.
+          </p>
+          <p>
+            Collect is an alias for Map and works exactly the same.
+          </p>
+          <p>
+            Let's run these methods on the same array to illustrate the differences.
+          </p>
+          <div class="code_gist">
+            <script src="https://gist.github.com/DavidOKeefe/43dcd6385bab1d72e6a7.js"></script>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       <nav>

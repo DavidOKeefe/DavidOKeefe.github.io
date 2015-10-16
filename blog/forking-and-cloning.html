@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chefs Kitchen</title>
+    <title>Forking and Cloning</title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
@@ -38,24 +38,48 @@
           <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
         </ul>
       </aside>
-      <section class="blog-content">
-        <img src="../imgs/Power-Lines.jpg" alt="Blog Image"/>
+      <section>
+        <!-- <img src="../imgs/#" alt="Blog Image"/> -->
         <div>
-          <h1>It Begins</h1>
-          <time>2015-08-29</time>
+          <h1>Forking and Cloning</h1>
+          <time>2015-09-06</time>
         </div>
         <div class="blog_text">
           <p>
-            I had watched this <a href="https://vimeo.com/85001014" target="_blank">video</a> just after getting accepted to DBC in the beginning of July and found this message to be so inspiring. Watching it a second time, my impression is the same. Wow.
+            If you want to set up a new project on Github, the first step is to create a new repository. These steps will walk you through the process:
           </p>
           <p>
-            After weeks of self study, in solitude and without structure, week 1 of phase 0 has finally arrived! I cannot express how excited I am to be on this journey. The philosophy and approach of Dev Bootcamp has completely changed the way I think about education.
+            <ul>
+              <li>Navigate to Github through your browser and sign in to your Github account</li>
+              <li>In the upper right corner of the page, click the plus sign and select New Repository from the dropdown menu</li>
+              <li>Give your repository a name</li>
+              <li>Select if the repository will be visible publicly or privately</li>
+              <li>Select the option to initialize with a README</li>
+              <li>Select the type of license for your project</li>
+              <li>Click Create Repository</li>
+            </ul>
           </p>
           <p>
-            I have never been overly enthusiastic about school. It's been a long while since high school and college but I always felt classes were something to finish, period. I was never personally invested in the experience so the difference between passing and excelling seemed irrelevant. Jobs were different. I was able to commit myself to work with passion, but school? Something to graduate.
+            Your repository is now created on Github! Next you'll want to clone the repository to your computer so you can start tracking and committing your work.
+          </p>
+          <ul>
+            <li>In Github, navigate to your newly created repository, find the SSH clone URL option and click Copy to Clipboard</li>
+            <li>Open a terminal session and go to the directory where your project will be saved</li>
+            <li>Type the command: git clone, paste the copied SSH clone URL and hit enter (note: you may be asked for your user name and password within the terminal)</li>
+          </ul>
+          <p>
+            A new directory has been created on you local machine containing the README and license agreement! You can now start creating your project in this directory and commit to your Github repository!
           </p>
           <p>
-            Even though the program has just started, the influence of DBC has been hugely inspirational. Maybe it's the risk we are all taking to be part of something described as life changing that makes DBC different. Fear is a powerful motivator and leaving a good job at a good company sure has a way of focusing my study efforts. But I think it's more than that. This is a program for people who currently lack the technical skills but have something more important; Passion. We are told DBC is there to support us but the learning comes from ourselves. We have ownership over this experience and we are responsible for changing our own lives.
+            Sometimes you won't be creating a project from scratch and instead will be contributing to an existing project. For this you will fork an existing repository to create a copy that you can work on without affecting the original. To do this you'll:
+          </p>
+          <ul>
+            <li>Navigate to the repository you want to fork in Github</li>
+            <li>In the upper right of the screen, click the fork button and a popup will appear asking you to select where to fork this repository</li>
+            <li>Select your Github account</li>
+          </ul>
+          <p>
+            A forked version of the repository has been created! Now you just need to follow the steps for cloning this repository to your local machine.
           </p>
         </div>
       </section>
