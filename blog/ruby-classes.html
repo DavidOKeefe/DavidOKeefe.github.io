@@ -23,53 +23,54 @@
       </nav>
     </header>
     <div class="main-content">
-    <aside class="blog-nav">
-      <ul>
-        <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
-                  <li class="blogLinks"><a href="thinking-about-time.html">Thinking about Time</a></li>
-        <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
-        <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
-        <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
-        <li class="blogLinks"><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
-        <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
-        <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
-        <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
-        <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
-      </ul>
-    </aside>
-    <section>
-      <!-- <img src="../imgs/" alt="Blog Image"/> -->
-      <div>
-        <h1>Intro to Classes</h1>
-        <time>2015-09-27</time>
-      </div>
-      <div class="blog_text">
-        <p>
-          Our journey towards object oriented design took another step forward this week with a dive into classes. Up until now we've used methods to solve challenges so our solutions have been somewhat procedural. Classes open up a new world of possibilities!
-        </p>
-        <p>
-          Let's start with some basics. Classes are blueprints to create objects. Those objects will have state and behavior. Classes are going to define state through instance variables and behavior through instance methods. Let's try to emulate a real world scenario and create objects that will make us some coffee.
-        </p>
-        <div class="code_gist">
-          <script src="https://gist.github.com/DavidOKeefe/83675e8062f1006de43f.js"></script>
+      <aside class="blog-nav">
+        <ul>
+          <li class="blogLinks"><a href="c1-chefs-kitchen.html">Chefs vs Kitchen</a></li>
+          <li class="blogLinks"><a href="thinking-about-time.html">Thinking about Time</a></li>
+          <li class="blogLinks"><a href="t1-git-blog.html">Version Control</a></li>
+          <li class="blogLinks"><a href="forking-and-cloning.html">Forking and Cloning</a></li>
+          <li class="blogLinks"><a href="css-concepts.html">CSS Concepts</a></li>
+          <li class="blogLinks"><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+          <li class="blogLinks"><a href="designing-for-accessibility.html">Designing for Accessibility</a></li>
+          <li class="blogLinks"><a href="enumerable-methods.html">Each vs. Map vs. Collect</a></li>
+          <li class="blogLinks"><a href="ruby-classes.html">Intro to Classes</a></li>
+          <li class="blogLinks"><a href="hash-vs-objects.html">Ruby Hash vs JavaScript Object</a></li>
+          <li class="blogLinks"><a href="regular-expressions.html">Regular Expressions</a></li>
+        </ul>
+      </aside>
+      <section>
+        <!-- <img src="../imgs/" alt="Blog Image"/> -->
+        <div>
+          <h1>Intro to Classes</h1>
+          <time>2015-09-27</time>
         </div>
-        <p>
-          Our Brew class is initialized with two arguments - grounds and brew_type. For this example, I used keyword arguments to add some clarity within the method call. We are passing an instance variable brew_type to define the coffee brewing technique (e.g. Drip, French Press, V60) in order to make our class somewhat extensible. When we call Brew.new this created an instance of the Brew class so we've given our object state. Let's create a brew method to give some behavior.
-        </p>
-        <div class="code_gist">
-          <script src="https://gist.github.com/DavidOKeefe/55141bb929f2f2f9947c.js"></script>
+        <div class="blog_text">
+          <p>
+            Our journey towards object oriented design took another step forward this week with a dive into classes. Up until now we've used methods to solve challenges so our solutions have been somewhat procedural. Classes open up a new world of possibilities!
+          </p>
+          <p>
+            Let's start with some basics. Classes are blueprints to create objects. Those objects will have state and behavior. Classes are going to define state through instance variables and behavior through instance methods. Let's try to emulate a real world scenario and create objects that will make us some coffee.
+          </p>
+          <div class="code_gist">
+            <script src="https://gist.github.com/DavidOKeefe/83675e8062f1006de43f.js"></script>
+          </div>
+          <p>
+            Our Brew class is initialized with two arguments - grounds and brew_type. For this example, I used keyword arguments to add some clarity within the method call. We are passing an instance variable brew_type to define the coffee brewing technique (e.g. Drip, French Press, V60) in order to make our class somewhat extensible. When we call Brew.new this created an instance of the Brew class so we've given our object state. Let's create a brew method to give some behavior.
+          </p>
+          <div class="code_gist">
+            <script src="https://gist.github.com/DavidOKeefe/55141bb929f2f2f9947c.js"></script>
+          </div>
+          <p>
+            Within our Brew class we created an instance method brew which uses the instance variable brew_type to call our V60 class. We pass the instance variable grounds to V60 and call that instance method make_coffee. There's more work needed to fully build this out but you can start seeing how classes can work together while keeping responsibilities separate.
+          </p>
+          <p>
+            Last but not least, attr_reader is a ruby shortcut for creating wrapper methods for instance variables. Instance variables start with an '@' sign which allows them to be accessed from anywhere within the class. By using attr_reader in our Brew class, the brew method was able to access the instance variable grounds without using the @ sign. When the brew method calls grounds it's actually calling the grounds method because attr_reader automatically created:
+          </p>
+          <div class="code_gist">
+            <script src="https://gist.github.com/DavidOKeefe/d9c63bb0301a46dfc512.js"></script>
+          </div>
         </div>
-        <p>
-          Within our Brew class we created an instance method brew which uses the instance variable brew_type to call our V60 class. We pass the instance variable grounds to V60 and call that instance method make_coffee. There's more work needed to fully build this out but you can start seeing how classes can work together while keeping responsibilities separate.
-        </p>
-        <p>
-          Last but not least, attr_reader is a ruby shortcut for creating wrapper methods for instance variables. Instance variables start with an '@' sign which allows them to be accessed from anywhere within the class. By using attr_reader in our Brew class, the brew method was able to access the instance variable grounds without using the @ sign. When the brew method calls grounds it's actually calling the grounds method because attr_reader automatically created:
-        </p>
-        <div class="code_gist">
-          <script src="https://gist.github.com/DavidOKeefe/d9c63bb0301a46dfc512.js"></script>
-        </div>
-      </div>
-    </section>
+      </section>
     </div>
     <footer>
       <nav>
