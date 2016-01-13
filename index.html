@@ -3,7 +3,10 @@
   <head>
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/projects.css" />
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,500,700,800,900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
   </head>
   <body>
     <header>
@@ -23,29 +26,61 @@
     </header>
     <div class="main-content">
       <section>
-        <figure>
-          <a href="projects/bingo_project/views/bingo.html">
-          <img src="imgs/bingo_image.png" alt="Bingo Project" />
-          <figcaption>Bingo</figcaption></a>
-        </figure>
-        <figure>
-          <a href="projects/cheat_sheet/cheat-sheet.html">
-          <img src="imgs/crib_sheet.jpg" alt="Project2" />
-            <figcaption>Cheat Sheet</figcaption>
-          </a>
-        </figure>
-        <figure>
-          <a href="http://git-sift.herokuapp.com">
-          <img src="projects/sift/imgs/Sift_Screenshot.jpg" alt="Sift" />
-            <figcaption>Sift</figcaption>
-          </a>
-        </figure>
-        <figure>
-          <a href="projects/256_project/views/256_index.html">
-          <img src="imgs/256_Screenshot.jpg" alt="256" />
-            <figcaption>256</figcaption>
-          </a>
-        </figure>
+        <div class="projects">
+          <h2 class="project-heading">Projects</h2>
+          <ul class="tabs">
+            <li class="active"><a href="#sift">Sift</a></li>
+            <li><a href="#256">256</a></li>
+            <li><a href="#bingo">Bingo</a></li>
+            <li class=><a href="#cheat_sheet">Cheat Sheet</a></li>
+          </ul>
+          <div class="project" id="sift">
+            <a href="http://git-sift.herokuapp.com">
+              <img class="project-img" src="projects/sift/imgs/Sift_Screenshot.jpg" alt="Sift" />
+              <h3 class="project-link">Sift</h3>
+            </a>
+            <p>
+              Sift is an app that allows developers to curate code samples from their GitHub repositories. Developed with an Angular-JS front end and a Rails back end, this app leverages the GitHub API to simplify advanced search options so developers can quickly and easily sift through their code.
+            </p>
+            <p>
+              This project was my pitch for a Dev Bootcamp final project. The idea was selected and the app built from the ground up in 8 days by a small team. I acted as product owner and technical lead on the project and paired on all major pieces of functionality. My primary focus was creating the Rails backend API and setting up OAuth2.
+            </p>
+            <a href="http://git-sift.herokuapp.com">Sift</a><br>
+            <a href="https://github.com/DavidOKeefe/sift">GitHub Repository</a>
+          </div>
+          <div class="project tab-content" id="bingo">
+            <a href="projects/bingo_project/views/bingo.html">
+              <img class="project-img" src="imgs/bingo_image.png" alt="Bingo Project" />
+              <h3 class="project-link">Bingo</h3>
+            </a>
+            <p> Bingo was my first deep dive into JavaScript after taking a CodeSchool course and reading Eloquent JavaScript. Developed originally as a Ruby command line application, this was my first taste of interacting with the DOM.
+            </p>
+            <p>
+              This game was built without any jQuery because I had yet to learn of its benefits!
+            </p>
+            <a href="projects/bingo_project/views/bingo.html">Play Now!</a><br>
+            <a href="https://github.com/DavidOKeefe/DavidOKeefe.github.io/tree/master/projects/bingo_project">GitHub Repository</a>
+          </div>
+          <div class="project tab-content" id="cheat_sheet">
+            <a href="projects/cheat_sheet/cheat-sheet.html">
+              <img class="project-img" src="imgs/crib_sheet.jpg" alt="Project2" />
+              <h3 class="project-link">Cheat Sheet</h3>
+            </a>
+            <p> This is a quick reference guide to keep track of some coding basics. It was also an opportunity to use some JavaScript to interact with the DOM.</p>
+            <a href="projects/cheat_sheet/cheat-sheet.html">Cheat Sheet</a><br>
+            <a href="https://github.com/DavidOKeefe/DavidOKeefe.github.io/tree/master/projects/cheat_sheet">GitHub Repository</a>
+          </div>
+          <div class="project tab-content" id="256">
+            <a href="projects/256_project/views/256_index.html">
+              <img class="project-img" src="imgs/256_Screenshot.jpg" alt="256" />
+              <h3 class="project-link">256</h3>
+            </a>
+            <p> 256 is a recreation of the popular game 2048. It was my first attempt using TDD with JavaScript and also an opportunity to build something with JS that employed Object Oriented principles.</p>
+            <p> Built in a long afternoon, the styling could still use some polish. </p>
+            <a href="projects/cheat_sheet/cheat-sheet.html">Play Now!</a><br>
+            <a href="https://github.com/DavidOKeefe/DavidOKeefe.github.io/tree/master/projects/256_project">GitHub Repository</a>
+          </div>
+        </div>
       </section>
     </div>
     <footer>

@@ -84,24 +84,6 @@ section {
   margin-bottom: 3em;
 }
 
-figure {
-    display: inline-block;
-    width: 25%;
-    margin: 1em;
-    text-align:center;
-}
-
-figure img{
-  display: inline-block;
-  max-height: 25em;
-  max-width: 25em;
-  width: 95%;
-  height: 95%;
-  margin: auto;
-  padding: 0.3em;
-  border: 0.1em solid #DDDAD6;
-}
-
 footer {
   position: fixed;
   bottom: 0;
